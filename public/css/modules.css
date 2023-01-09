@@ -1,0 +1,68 @@
+/*==========================================================================
+BLOC METEO
+==========================================================================*/
+.damier-bleu1 {
+    background-color: var(--damier-bleu1);
+}
+
+.damier-bleu2 {
+    background-color: var(--damier-bleu2);
+}
+
+.damier-bleu3 {
+    background-color: var(--damier-bleu3);
+}
+
+.damier-bleu4 {
+    background-color: var(--damier-bleu4);
+}
+
+.info-meteo {
+    margin: 1rem;
+    border-radius: .5rem;
+    border: .1rem rgba(51, 51, 51, 0.8) solid;
+}
+
+.info {
+    text-align: center;
+    margin: 0 2.78rem 0 2.78rem;
+}
+
+.selection {
+    text-align: center;
+    font-family: var(--police-texte);
+    font-size: 1.4rem;
+}
+
+.info::first-letter,
+.selection::first-letter {
+    text-transform: capitalize;
+}
+
+.previsions {
+    text-align: center;
+    font-weight: 400;
+    color: var(--couleur-titre);
+    margin: 1rem 0 0 0;
+}
+
+/*==========================================================================
+BLOC RESPONSIVE
+==========================================================================*/
+@media screen and (min-width: 560px) {
+    .info-meteo {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .info-meteo {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .info {
+        font-size: 1.6rem;
+    }
+}

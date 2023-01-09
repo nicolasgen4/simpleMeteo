@@ -1,0 +1,21 @@
+body {
+    background-image: url(../images/sky-background.jpg);
+    background-size: cover;
+}
+
+p {
+    font-family: var(--police-texte);
+    color: var(--couleur-texte);
+    font-size: var(--taille-texte);
+}
+
+h1 {
+    font-family: var(--police-titre);
+    color: var(--couleur-titre);
+    font-size: var(--taille-titre);
+}
+
+h2, h3 {
+    font-family: var(--police-texte);
+    font-size: var(--taille-texte);
+}

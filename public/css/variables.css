@@ -1,0 +1,12 @@
+:root {
+    --couleur-texte: #FCFCFC;
+    --couleur-titre: #081824;
+    --police-texte: 'Quicksand', Arial, Helvetica, sans-serif;
+    --police-titre : 'Montserrat', Arial, Helvetica, sans-serif;
+    --taille-titre : 3rem;
+    --taille-texte : 2rem;
+    --damier-bleu1 : rgba(41, 128, 185, 0.9);
+    --damier-bleu2 : rgba(43, 78, 101, 0.9);
+    --damier-bleu3 : rgba(52, 152, 219, 0.9);
+    --damier-bleu4 : rgba(143, 146, 154, 0.9);
+}
