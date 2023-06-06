@@ -4,7 +4,7 @@ meteo.addEventListener("change", consulterMeteo);
 
 function consulterMeteo() {
     if (villes.value !== "") {
-        let apiLien = "https://www.prevision-meteo.ch/services/json/" + villes.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        let apiLien = "https://www.prevision-meteo.ch/services/json/" + villes.value;
         let mainElt = document.querySelector("main.wrapper");
         let divMeteoElt = document.querySelector("div.meteo");
         //Blocs à créer
@@ -217,7 +217,7 @@ function consulterMeteo() {
             if (reponse.ok) return reponse.json()
         })
             .then((donnees) => {
-                document.getElementById('nom').textContent = "à " + donnees.city_info.name + " il fait...";
+                document.getElementById('nom').textContent = "à " + donnees.city_info.name.replace('(16)', '') + " il fait...";
                 document.getElementById('temperature').textContent = donnees.current_condition.tmp + " °C";
                 document.getElementById('lever-soleil').textContent = "le soleil se lève à " + donnees.city_info.sunrise;
                 document.getElementById('coucher-soleil').textContent = "le soleil se couche à " + donnees.city_info.sunset;
